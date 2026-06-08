@@ -16,9 +16,9 @@ Full credit and reference:
 
 ## The problem
 
-A global manufacturing company operates factories in 5 countries — USA, Germany, Japan, Brazil and India — and sells to markets in those same 5 countries. The goal is to decide:
+A global manufacturing company operates factories in 5 countries ; USA, Germany, Japan, Brazil and India and sells to markets in those same 5 countries. The goal is to decide:
 
-- Which factories to keep open (and at what capacity — high or low)
+- Which factories to keep open (and at what capacity high or low)
 - How many units to ship from each factory to each market
 
 ...all while minimizing total monthly cost, which includes fixed factory costs, variable production costs, and shipping costs.
@@ -27,7 +27,7 @@ A global manufacturing company operates factories in 5 countries — USA, German
 
 ## How the model works
 
-The problem is set up as a **Mixed Integer Linear Program (MILP)** using Python. The solver finds the mathematically optimal answer — not just a good one, but the best possible one — in under a second.
+The problem is set up as a **Mixed Integer Linear Program (MILP)** using Python. The solver finds the mathematically optimal answer; not just a good one, but the best possible one in under a second.
 
 Two types of decision variables:
 - `x` — how many units to ship from factory i to market j
@@ -37,7 +37,7 @@ Two types of decision variables:
 
 ## Key result
 
-Under the shipping crisis scenario (container costs × 5), the optimal solution costs **$92,981,000/month**. The model responded by reopening local factories in USA and Japan — showing that when shipping gets expensive enough, local production wins even at higher labour costs.
+Under the shipping crisis scenario (container costs × 5), the optimal solution costs **$92,981,000/month**. The model responded by reopening local factories in USA and Japan, showing that when shipping gets expensive enough, local production wins even at higher labour costs.
 
 Open factories in the optimal solution:
 
@@ -64,7 +64,7 @@ Open factories in the optimal solution:
 
 ## Visualizations
 
-Four charts are generated at the end of the notebook:
+I added few charts as well that are generated at the end of the notebook:
 
 1. **Sankey chart** — shows production flow from each factory to each market, band width = volume
 2. **Demand variability** — simulates how demand could fluctuate across 50 cases using normal distribution
